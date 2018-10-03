@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		html { 
+		  background: url(img/background.png) no-repeat center center fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+		}
+
+		.center-div {
+		   margin: 0 auto;
+		   padding: 50% 0;
+		   width: 100px; 
+		   text-align: center;
+		}
+
+	/*	#nav {
+		  position: relative;
+		  background: white;
+		  height: 200px;
+		  width: 60%;
+		  margin: 0 auto;
+		  padding: 20px;
+		  resize: both;
+		  overflow: auto;
+		}*/
+
+		#nav {
+		  width: 50%;
+		  transform: translate(-50%, -50%);
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  padding: 20px;
+		  resize: both;
+		  overflow: auto;
+		  cursor: url("img/sunshine.png"), auto;
+		  vertical-align: center;
+		}
+
+		a {
+			color: black;
+			font-size: 1.5em;
+			font-style: italic;
+			font-family: "Sabon LT Pro";
+			display: block;
+			text-decoration: none;
+			margin-bottom: 2vw;
+			target-new: tab;
+		}
+
+		a:hover {
+			color: white;
+			text-decoration: underline;
+		}
+
+		body {
+			cursor: url("img/sunshine.png"), auto;
+
+		}
+	</style>
+
+	<script src="lib/p5/p5.min.js"></script>
+    <script src="lib/p5/addons/p5.dom.min.js"></script>
+    <script src="lib/p5/addons/p5.sound.min.js"></script>
+    <script src="lib/processing/processing.min.js"></script>
+   <!--  <script src="scripts/cursor.pde"></script> -->
+
+</head>
+<body>
+
+<div class="center-div" id="nav">
+	<div>
+		<a href="music.html"> music </a>
+		<a href="https://www.bairdswebsite.com"> merch </a>
+		<a href="https://www.bairdswebsite.com"> contact </a>
+		<a href="https://www.bairdswebsite.com"> about </a>
+	</div>
+</div>
+
+</body>
+</html>
