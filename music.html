@@ -1,9 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="node_modules/flickity/dist/flickity.css" media="screen">
+<style>
+.carousel-cell {
+  width: 100%; /* full width */
+  height: 800px;
+  background: url(img/transparent.png);
+  /* center images in cells with flexbox */
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
 
+.main-carousel.is-fullscreen .carousel-cell {
+  height: 100%;
+}
+
+.carousel-cell img {
+  display: block;
+  max-height: 100%;
+}
+</style>
 </head>
 <body>
-	<h1> MUZAKKKK </h1>
+	<script src="node_modules/flickity/dist/flickity.pkgd.min.js"></script>
+
+	<div class="main-carousel">
+  <div class="carousel-cell">
+    <h1> MUZAKKKK 1</h1>
+    <img data-flickity-lazyload="img/sunshine.png" />
+	<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/467711337&color=%239e9c99&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+</div>
+  <div class="carousel-cell">
+  	 <h1> MUZAKKKK 2</h1>
+	<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/467711337&color=%239e9c99&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+  </div>
+  <div class="carousel-cell">
+  	 <h1> MUZAKKKK 3</h1>
+	<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/467711337&color=%239e9c99&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+  </div>
+</div>
+
+<script>
+	var flkty = new Flickity( '.main-carousel', {
+  // options
+  fullscreen: true,
+  lazyLoad: 1
+});
+
+</script>
+
+
 </body>
 </html>	
