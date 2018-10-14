@@ -3,10 +3,14 @@
 <head>
 <link rel="stylesheet" href="node_modules/flickity/dist/flickity.css" media="screen">
 <style>
+
+body {
+  overflow: hidden;
+}
 .carousel-cell {
   width: 100%; /* full width */
-  height: 800px;
-  background: url(img/transparent.png);
+  height: 100vh;
+  background: url(img/bairdBirdSlow.gif);
   /* center images in cells with flexbox */
   display: block;
   align-items: center;
@@ -21,6 +25,11 @@
   display: block;
   max-height: 100%;
 }
+
+.carousel-cell iframe {
+  position:fixed;
+  bottom: 1px;
+}
 </style>
 </head>
 <body>
@@ -28,16 +37,12 @@
 
 	<div class="main-carousel">
   <div class="carousel-cell">
-    <h1> MUZAKKKK 1</h1>
-    <img data-flickity-lazyload="img/sunshine.png" />
 	<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/467711337&color=%239e9c99&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 </div>
   <div class="carousel-cell">
-  	 <h1> MUZAKKKK 2</h1>
 	<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/467711337&color=%239e9c99&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
   </div>
   <div class="carousel-cell">
-  	 <h1> MUZAKKKK 3</h1>
 	<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/467711337&color=%239e9c99&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
   </div>
 </div>
@@ -46,7 +51,8 @@
 	var flkty = new Flickity( '.main-carousel', {
   // options
   fullscreen: true,
-  lazyLoad: 1
+  lazyLoad: 1,
+  pageDots: false
 });
 
 </script>
