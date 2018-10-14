@@ -3,7 +3,7 @@
 <head>
 	<style>
 		html { 
-		  background: url(img/backgroundBirdsFly.gif) no-repeat center center fixed; 
+		  background: url(img/backgroundBirdsFly.2.gif) no-repeat center center fixed; 
 		  -webkit-background-size: cover;
 		  -moz-background-size: cover;
 		  -o-background-size: cover;
@@ -43,7 +43,9 @@
 
 		a {
 			color: black;
-			font-size: 1.5em;
+			font-size: 1.5rem;
+			/*font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));*/
 			font-style: italic;
 			font-family: "Sabon LT Pro";
 			display: block;
@@ -55,6 +57,12 @@
 		a:hover {
 			color: white;
 			text-decoration: underline;
+		}
+
+		@media screen and (min-width: 75em) {
+		  a {
+		    font-size: 4em;
+		  }
 		}
 
 		body {
